@@ -11,11 +11,12 @@ if __name__ == "__main__":
         start = Text.find('through') - 23
         end = Text[start:].find('.')
         print(Text[start : start+end])
-    
-    else:
-        print("No Udemy sale right now.")    
-    
-    
-    
+        option = input(" Shall I open the Udemy site for you? (y/n): ")
 
-    
+        if option == "y":
+            webbrowser.open("https://www.udemy.com/")
+        else:
+            pass
+
+    else:
+        print("No Udemy sale right now.")       
